@@ -4,7 +4,7 @@ import os
 st.set_page_config(page_title="Trabalho de Ciências - Rochas", layout="wide")
 
 st.title("🪨 Trabalho de Ciências - Tipos de Rochas")
-st.markdown("Explore abaixo alguns tipos de rochas e suas descrições.")
+st.caption('Por Manuela Monteiro')
 
 # Textos em Markdown
 textos = {
@@ -46,7 +46,7 @@ imagens = {
     "Quartzo leitoso": "images/quartzo_leitoso.jpg",
     "Quartzo": "images/quartzo.jpg",
     "Granito rosa": "images/granito_rosa.jpg",
-    "Arenito silicificado": "images/arenito_silicificado.jpg"
+    "Arenito silicificado": "images/arenito.jpg"
 }
 
 cols = st.columns(2)
@@ -66,8 +66,5 @@ for i, rocha in enumerate(textos.keys()):
 
 st.divider()
 
-st.header("📌 Conclusão Geral")
-st.text_area("Escreva a conclusão do trabalho:", height=200)
-
 st.markdown("---")
-st.caption("Página criada para trabalho escolar de ciências.")
+st.caption("Página criada para apresentação de trabalho escolar de ciências de Manuela Monteiro - 6º ano.")
